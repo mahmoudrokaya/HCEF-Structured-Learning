@@ -108,3 +108,124 @@ HCEF-Structured-Learning/
 ├── Figures/
 ├── Tables/
 └── README.md
+# Hyperparameter Configuration
+
+## Hyperparameter Configuration
+
+The following hyperparameter settings were used in the implementation of the proposed Hybrid Contrastive–Ensemble Framework (HCE-F). These configurations correspond to the experiments reported in the manuscript and are provided to support full computational reproducibility.
+
+---
+
+## HCE-F Forecasting Model (Experiment 3)
+
+| Parameter | Value |
+|---|---:|
+| Optimizer | Adam |
+| Learning rate | 0.001 |
+| Batch size | 128 |
+| Epochs | 20 |
+| Contrastive temperature (τ) | 0.2 |
+| Validation split | 0.20 |
+| Loss function | Supervised Contrastive Loss + Ensemble Fusion Loss |
+| Ensemble weighting strategy | Validation-performance based |
+| Residual activation | ReLU |
+| Output activation | Linear |
+| Random seed | 42 |
+
+---
+
+## HCEF-LSTM Forecasting Model (Experiment 3B)
+
+| Parameter | Value |
+|---|---:|
+| Model type | LSTM + Dense regression head |
+| LSTM units | 64 |
+| Dense units | 32 |
+| Activation | ReLU |
+| Output activation | Linear |
+| Optimizer | Adam |
+| Learning rate | 0.001 |
+| Batch size | 128 |
+| Epochs | 50 |
+| Validation split | 0.20 |
+| Best-performing lookback window | 7 days |
+| Early stopping | Enabled |
+| Random seed | 42 |
+
+---
+
+## Baseline Forecasting Models (Experiment 2)
+
+| Model | Hyperparameter Configuration |
+|---|---|
+| Linear Regression | Default scikit-learn settings |
+| Ridge Regression | alpha = 1.0 |
+| ElasticNet | alpha = 1.0, l1_ratio = 0.5 |
+| Random Forest Regressor | n_estimators = 200 |
+| Extra Trees Regressor | n_estimators = 200 |
+| Gradient Boosting Regressor | n_estimators = 100 |
+| MLP Regressor | hidden_layer_sizes = (100,), max_iter = 500 |
+
+---
+
+## Lookback Window Sensitivity Analysis (Experiment 5)
+
+Evaluated temporal input windows:
+
+| Window Size |
+|---:|
+| 3-day |
+| 7-day |
+| 14-day |
+| 30-day |
+
+The 7-day and 14-day temporal windows yielded the strongest overall forecasting performance.
+
+---
+
+## External Validation Experiments (Experiments 7 and 8)
+
+| Parameter | Value |
+|---|---:|
+| Train/Test Split | 80/20 |
+| Cross-validation | 5-fold |
+| Random seed | 42 |
+| Evaluation metrics | Accuracy, Precision, Recall, F1-score, ROC-AUC, PR-AUC |
+
+External validation datasets:
+
+- Breast Cancer Wisconsin Diagnostic Dataset
+- UCI Heart Disease Dataset
+
+---
+
+## Computational Environment
+
+The experiments were executed under the following software and hardware environment.
+
+### Software
+
+| Component | Version |
+|---|---:|
+| Python | 3.10+ |
+| NumPy | Latest stable |
+| pandas | Latest stable |
+| scikit-learn | Latest stable |
+| TensorFlow | 2.x |
+| Keras | 2.x |
+| Matplotlib | Latest stable |
+| Seaborn | Latest stable |
+| openpyxl | Latest stable |
+
+---
+
+### Hardware
+
+| Component | Specification |
+|---|---:|
+| Processor | Intel Core i7 |
+| RAM | 16 GB |
+| GPU | CPU-based execution (no dedicated GPU required) |
+| Operating System | Windows |
+
+All experiments were designed to run under modest computational resources and were successfully executed on standard desktop hardware.
