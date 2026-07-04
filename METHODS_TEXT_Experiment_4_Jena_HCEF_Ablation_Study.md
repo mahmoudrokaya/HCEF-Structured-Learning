@@ -1,0 +1,6 @@
+
+### Experiment 4: Ablation Study and Component Contribution Analysis
+
+The fourth experiment quantified the contribution of each component in the proposed sequence-aware HCE-F model. The same seven-day Jena Climate forecasting dataset and chronological train-validation-test split used in the baseline and full temporal HCE-F experiments were retained to ensure direct comparability. Five controlled variants were evaluated: the full Temporal HCE-F LSTM model, a version without contrastive loss, a version without the residual-gated connection, a single-head version without ensemble fusion, and a plain LSTM-only baseline.
+
+Each variant was trained using the same optimization settings, early-stopping criterion, and evaluation metrics. Forecasting performance was assessed using MAE, RMSE, MAPE, SMAPE, and R2. Component contribution was estimated by comparing each ablated variant against the full Temporal HCE-F model, where increases in error or decreases in R2 after removing a component were interpreted as evidence of that component's positive contribution. This ablation design directly supports the methodological claim that temporal encoding, residual stabilization, contrastive latent alignment, and ensemble fusion jointly contribute to forecasting robustness.

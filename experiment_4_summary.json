@@ -1,0 +1,50 @@
+{
+    "experiment": "Experiment_4_Jena_HCEF_Ablation_Study",
+    "status": "completed",
+    "input_dataset": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_7d.csv",
+    "output_folder": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_4_Jena_HCEF_Ablation_Study",
+    "device": "cpu",
+    "lookback_days": 7,
+    "daily_feature_dim": 56,
+    "best_variant": "No_Residual_Gate",
+    "best_test_RMSE": 4.272534932394954,
+    "best_test_MAE": 3.5341689586639404,
+    "best_test_R2": 0.6788358688354492,
+    "variants": [
+        {
+            "name": "Full_Temporal_HCEF_LSTM",
+            "use_residual_gate": true,
+            "use_projection": true,
+            "use_ensemble": true,
+            "contrastive_weight": 0.02
+        },
+        {
+            "name": "No_Contrastive_Loss",
+            "use_residual_gate": true,
+            "use_projection": true,
+            "use_ensemble": true,
+            "contrastive_weight": 0.0
+        },
+        {
+            "name": "No_Residual_Gate",
+            "use_residual_gate": false,
+            "use_projection": true,
+            "use_ensemble": true,
+            "contrastive_weight": 0.02
+        },
+        {
+            "name": "Single_Head_No_Ensemble",
+            "use_residual_gate": true,
+            "use_projection": true,
+            "use_ensemble": false,
+            "contrastive_weight": 0.02
+        },
+        {
+            "name": "LSTM_Only",
+            "use_residual_gate": false,
+            "use_projection": false,
+            "use_ensemble": false,
+            "contrastive_weight": 0.0
+        }
+    ]
+}
