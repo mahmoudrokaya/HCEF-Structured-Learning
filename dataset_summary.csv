@@ -1,0 +1,2 @@
+dataset_file,rows,columns_after_cleanup,target_column,target_classes,feature_count,missing_values_after_processing
+D:\47\471\New Papers\Paper 3 IJOCTA\Sub\Data\Breast Cancer Wisconsin Diagnostic Dataset\data.csv,569,31,diagnosis,"['B', 'M']",30,0

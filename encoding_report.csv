@@ -1,0 +1,31 @@
+feature,encoding,unique_values
+radius_mean,numeric,456
+texture_mean,numeric,479
+perimeter_mean,numeric,522
+area_mean,numeric,539
+smoothness_mean,numeric,474
+compactness_mean,numeric,537
+concavity_mean,numeric,537
+concave points_mean,numeric,542
+symmetry_mean,numeric,432
+fractal_dimension_mean,numeric,499
+radius_se,numeric,540
+texture_se,numeric,519
+perimeter_se,numeric,533
+area_se,numeric,528
+smoothness_se,numeric,547
+compactness_se,numeric,541
+concavity_se,numeric,533
+concave points_se,numeric,507
+symmetry_se,numeric,498
+fractal_dimension_se,numeric,545
+radius_worst,numeric,457
+texture_worst,numeric,511
+perimeter_worst,numeric,514
+area_worst,numeric,544
+smoothness_worst,numeric,411
+compactness_worst,numeric,529
+concavity_worst,numeric,539
+concave points_worst,numeric,492
+symmetry_worst,numeric,500
+fractal_dimension_worst,numeric,535
