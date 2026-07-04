@@ -1,0 +1,6 @@
+
+### Experiment 2: Baseline Forecasting Models
+
+The second experiment established conventional baseline performance for the daily Jena Climate forecasting task. The generated seven-day sliding-window dataset was used as the primary modeling dataset, where each sample represented multivariate climate information from the previous seven days and the target represented the current day's mean temperature. The data were divided using a chronological 70/15/15 train-validation-test split to avoid temporal leakage.
+
+The evaluated baselines included a persistence model that used the previous day's mean temperature as the prediction, linear regression, ridge regression, ElasticNet, random forest regression, extra trees regression, gradient boosting regression, and a multilayer perceptron regressor. Standardization was applied to models requiring scale normalization. Forecasting performance was assessed using mean absolute error, root mean squared error, mean absolute percentage error, symmetric mean absolute percentage error, and coefficient of determination. The resulting baseline metrics define the reference level against which the proposed temporal HCE-F model and later ablation experiments are compared.

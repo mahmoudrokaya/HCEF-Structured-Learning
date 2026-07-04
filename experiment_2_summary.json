@@ -1,0 +1,18 @@
+{
+    "experiment": "Experiment_2_Jena_Baseline_Forecasting",
+    "status": "completed",
+    "input_dataset": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_7d.csv",
+    "output_folder": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_2_Jena_Baseline_Forecasting",
+    "target": "target_temperature_today",
+    "date_column": "date",
+    "features": 392,
+    "samples": 1146,
+    "train_rows": 802,
+    "validation_rows": 172,
+    "test_rows": 172,
+    "split_strategy": "chronological 70/15/15 split",
+    "best_baseline_model": "Extra_Trees",
+    "best_test_RMSE": 4.494946483150325,
+    "best_test_MAE": 3.7503433813217972,
+    "best_test_R2": 0.6445284431847919
+}

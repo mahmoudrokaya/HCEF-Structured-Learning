@@ -1,0 +1,14 @@
+{
+    "model": "Extra_Trees",
+    "training_time_seconds": 0.7201251983642578,
+    "validation_MAE": 4.027726116278132,
+    "validation_RMSE": 4.952726986041268,
+    "validation_MAPE": 51.47183232177114,
+    "validation_SMAPE": 63.48544284004271,
+    "validation_R2": 0.5583951471675843,
+    "test_MAE": 3.7503433813217972,
+    "test_RMSE": 4.494946483150325,
+    "test_MAPE": 108.97893793383506,
+    "test_SMAPE": 74.64315264455841,
+    "test_R2": 0.6445284431847919
+}
