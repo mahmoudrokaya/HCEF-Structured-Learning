@@ -1,0 +1,2 @@
+model,lookback_days,daily_feature_dim,sequence_shape,best_epoch,training_time_seconds,test_MAE,test_RMSE,test_MAPE,test_SMAPE,test_R2,ensemble_weight_1,ensemble_weight_2
+Temporal_HCEF_LSTM,7,56,7 x 56,35,7.526113033294678,3.5791831016540527,4.4797498929508945,124.4121322631836,58.85356521606445,0.6469279527664185,0.4844890832901001,0.5155109167098999
