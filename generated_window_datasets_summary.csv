@@ -1,0 +1,5 @@
+window_days,samples,features,output_file
+3,1150,168,D:\47\471\New Papers\Paper 3 IJOCTA\Sub\New_3_Experiments\Experiment_1B_Jena_Daily_Window_Generation\Generated_Datasets\jena_daily_window_3d.csv
+7,1146,392,D:\47\471\New Papers\Paper 3 IJOCTA\Sub\New_3_Experiments\Experiment_1B_Jena_Daily_Window_Generation\Generated_Datasets\jena_daily_window_7d.csv
+14,1139,784,D:\47\471\New Papers\Paper 3 IJOCTA\Sub\New_3_Experiments\Experiment_1B_Jena_Daily_Window_Generation\Generated_Datasets\jena_daily_window_14d.csv
+30,1123,1680,D:\47\471\New Papers\Paper 3 IJOCTA\Sub\New_3_Experiments\Experiment_1B_Jena_Daily_Window_Generation\Generated_Datasets\jena_daily_window_30d.csv
