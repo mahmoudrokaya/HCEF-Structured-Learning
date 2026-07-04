@@ -1,0 +1,12 @@
+{
+    "dataset_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\Data\\UCI Heart Disease Data\\heart_disease_uci.csv",
+    "rows": 920,
+    "columns_after_cleanup": 16,
+    "target_column": "num",
+    "target_classes": [
+        "no_disease",
+        "disease"
+    ],
+    "feature_count": 15,
+    "missing_values_after_processing": 0
+}
