@@ -1,0 +1,6 @@
+
+### Experiment 1: Jena Climate Data Audit and Temporal Structure Analysis
+
+The first experiment audited the Jena Climate multivariate time-series dataset before model development. The dataset was loaded from `jena_climate_2009_2016_Excel.xlsx`, located in the baseline data folder. The datetime column was automatically detected, converted to a standard datetime format, and used to sort the observations chronologically. Invalid datetime rows, duplicate timestamps, missing values, and sampling intervals were quantified to verify temporal consistency.
+
+The experiment then characterized the temporal and statistical structure of the dataset. Numerical variables were detected and converted to numeric format when possible, and `T (degC)` was used as the primary target candidate for subsequent forecasting experiments. The audit generated column-level descriptive statistics, missing-value summaries, yearly and monthly record counts, temporal temperature trends, monthly mean temperature trends, correlation matrices, feature-target correlations, selected-lag autocorrelation, full 1-to-288 lag autocorrelation, lagged target correlations, PCA projections, t-SNE projections, and seasonal summaries. These outputs establish the empirical basis for later baseline forecasting, temporal HCE-F model evaluation, ablation analysis, and robustness testing.

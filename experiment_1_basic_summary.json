@@ -1,0 +1,17 @@
+{
+    "input_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\Data\\Baseline\\jena_climate_2009_2016_Excel.xlsx",
+    "rows": 166018,
+    "columns": 20,
+    "datetime_column": "Date Time",
+    "invalid_datetime_rows_removed": 254433,
+    "start_time": "2009-01-01 00:10:00",
+    "end_time": "2017-01-01 00:00:00",
+    "median_sampling_interval_seconds": 600.0,
+    "median_sampling_interval_minutes": 10.0,
+    "duplicate_rows": 144,
+    "duplicate_timestamps": 144,
+    "total_missing_values": 0,
+    "missing_percentage": 0.0,
+    "numeric_columns_detected": 19,
+    "target_candidate": "T (degC)"
+}

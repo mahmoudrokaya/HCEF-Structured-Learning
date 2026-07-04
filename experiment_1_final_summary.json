@@ -1,0 +1,22 @@
+{
+    "experiment": "Experiment_1_Jena_Data_Audit",
+    "status": "completed",
+    "input_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\Data\\Baseline\\jena_climate_2009_2016_Excel.xlsx",
+    "output_folder": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1_Jena_Data_Audit",
+    "rows": 166018,
+    "columns": 21,
+    "datetime_column": "Date Time",
+    "target_candidate": "T (degC)",
+    "start_time": "2009-01-01 00:10:00",
+    "end_time": "2017-01-01 00:00:00",
+    "median_sampling_interval_minutes": 10.0,
+    "numeric_columns_detected": 19,
+    "duplicate_rows": 144,
+    "duplicate_timestamps": 144,
+    "missing_percentage": 0.0,
+    "pca_explained_variance_ratio": [
+        0.4271669399931464,
+        0.13467580634139473
+    ],
+    "processed_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1_Jena_Data_Audit\\Processed_Data\\jena_climate_processed_audit_ready.csv"
+}
