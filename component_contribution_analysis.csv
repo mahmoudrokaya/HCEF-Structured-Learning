@@ -1,0 +1,5 @@
+comparison,ablated_variant,RMSE_difference_ablated_minus_full,MAE_difference_ablated_minus_full,R2_difference_full_minus_ablated
+Full_Temporal_HCEF_LSTM vs No_Residual_Gate,No_Residual_Gate,-0.20721496055594013,-0.045014142990112305,-0.03190791606903076
+Full_Temporal_HCEF_LSTM vs LSTM_Only,LSTM_Only,-0.04902502440875356,0.07962822914123535,-0.007685542106628418
+Full_Temporal_HCEF_LSTM vs No_Contrastive_Loss,No_Contrastive_Loss,0.0008020811971558572,0.027726411819458008,0.0001264810562133789
+Full_Temporal_HCEF_LSTM vs Single_Head_No_Ensemble,Single_Head_No_Ensemble,0.24244551661063518,0.15869760513305664,0.039250850677490234
