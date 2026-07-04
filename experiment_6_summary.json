@@ -1,0 +1,7 @@
+{
+    "experiment": "Experiment_6_Final_Comparative_Summary",
+    "best_model": "HCEF_LSTM_7d",
+    "best_rmse": 3.96,
+    "best_mae": 3.18,
+    "best_r2": 0.7172
+}
