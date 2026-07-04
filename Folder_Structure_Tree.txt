@@ -1,0 +1,297 @@
+New_3_Experiments
+├── Codes
+│   ├── Experiment_1_Jena_Data_Audit.py
+│   ├── Experiment_1B_Jena_Daily_Aggregation_and_Window_Generation.py
+│   ├── Experiment_2_Jena_Baseline_Forecasting.py
+│   ├── Experiment_3_Jena_HCEF_Model.py
+│   ├── Experiment_3B_Jena_HCEF_LSTM_Model.py
+│   ├── Experiment_4_Jena_HCEF_Ablation_Study.py
+│   ├── Experiment_5_Jena_Lookback_Window_Sensitivity.py
+│   ├── Experiment_6_Jena_Final_Comparative_Summary.py
+│   ├── Experiment_7_HCEF_External_Validation_Breast_Cancer.py
+│   ├── Experiment_8_HCEF_External_Validation_Heart_Disease.py
+│   ├── Folder_S.py
+│   └── README.md
+├── Experiment_1_Jena_Data_Audit
+│   ├── Figures
+│   │   ├── missing_values_top_columns.png
+│   │   ├── monthly_target_mean_trend.png
+│   │   ├── numeric_correlation_matrix.png
+│   │   ├── pca_temperature_structure.png
+│   │   ├── records_by_year.png
+│   │   ├── seasonal_target_mean.png
+│   │   ├── target_autocorrelation_1_to_288_lags.png
+│   │   ├── target_autocorrelation_selected_lags.png
+│   │   ├── target_temporal_trend.png
+│   │   ├── top_feature_target_correlations.png
+│   │   └── tsne_temperature_structure.png
+│   ├── Processed_Data
+│   │   └── jena_climate_processed_audit_ready.csv
+│   ├── Reports
+│   │   ├── experiment_1_basic_summary.json
+│   │   ├── experiment_1_final_summary.json
+│   │   ├── METHODS_TEXT_Experiment_1_Jena_Data_Audit.md
+│   │   └── README_Experiment_1_Jena_Data_Audit.md
+│   └── Tables
+│       ├── basic_dataset_summary.csv
+│       ├── column_profile.csv
+│       ├── feature_target_correlation.csv
+│       ├── missing_values_by_column.csv
+│       ├── monthly_target_mean.csv
+│       ├── numeric_correlation_matrix.csv
+│       ├── pca_coordinates.csv
+│       ├── records_by_year.csv
+│       ├── records_by_year_month.csv
+│       ├── seasonal_numeric_summary.csv
+│       ├── seasonal_target_summary.csv
+│       ├── target_autocorrelation_1_to_288_lags.csv
+│       ├── target_autocorrelation_selected_lags.csv
+│       ├── target_lag_correlation.csv
+│       └── tsne_coordinates_sample.csv
+├── Experiment_1B_Jena_Daily_Window_Generation
+│   ├── Generated_Datasets
+│   │   ├── jena_daily_aggregated.csv
+│   │   ├── jena_daily_window_14d.csv
+│   │   ├── jena_daily_window_30d.csv
+│   │   ├── jena_daily_window_3d.csv
+│   │   └── jena_daily_window_7d.csv
+│   ├── Reports
+│   │   └── experiment_1b_summary.json
+│   └── Tables
+│       └── generated_window_datasets_summary.csv
+├── Experiment_2_Jena_Baseline_Forecasting
+│   ├── Figures
+│   │   ├── baseline_models_test_mae.png
+│   │   ├── baseline_models_test_r2.png
+│   │   ├── baseline_models_test_rmse.png
+│   │   ├── best_baseline_observed_vs_predicted.png
+│   │   ├── predictions_ElasticNet.png
+│   │   ├── predictions_Extra_Trees.png
+│   │   ├── predictions_Gradient_Boosting.png
+│   │   ├── predictions_Linear_Regression.png
+│   │   ├── predictions_MLP_Regressor.png
+│   │   ├── predictions_Persistence_Previous_Day_Temperature.png
+│   │   ├── predictions_Random_Forest.png
+│   │   ├── predictions_Ridge.png
+│   │   ├── residuals_ElasticNet.png
+│   │   ├── residuals_Extra_Trees.png
+│   │   ├── residuals_Gradient_Boosting.png
+│   │   ├── residuals_Linear_Regression.png
+│   │   ├── residuals_MLP_Regressor.png
+│   │   ├── residuals_Persistence_Previous_Day_Temperature.png
+│   │   ├── residuals_Random_Forest.png
+│   │   ├── residuals_Ridge.png
+│   │   ├── scatter_ElasticNet.png
+│   │   ├── scatter_Extra_Trees.png
+│   │   ├── scatter_Gradient_Boosting.png
+│   │   ├── scatter_Linear_Regression.png
+│   │   ├── scatter_MLP_Regressor.png
+│   │   ├── scatter_Persistence_Previous_Day_Temperature.png
+│   │   ├── scatter_Random_Forest.png
+│   │   └── scatter_Ridge.png
+│   ├── Model_Outputs
+│   ├── Predictions
+│   │   ├── all_model_test_predictions.csv
+│   │   ├── predictions_ElasticNet.csv
+│   │   ├── predictions_Extra_Trees.csv
+│   │   ├── predictions_Gradient_Boosting.csv
+│   │   ├── predictions_Linear_Regression.csv
+│   │   ├── predictions_MLP_Regressor.csv
+│   │   ├── predictions_Persistence_Previous_Day_Temperature.csv
+│   │   ├── predictions_Random_Forest.csv
+│   │   └── predictions_Ridge.csv
+│   ├── Reports
+│   │   ├── best_baseline_model.json
+│   │   ├── experiment_2_summary.json
+│   │   ├── METHODS_TEXT_Experiment_2_Jena_Baseline_Forecasting.md
+│   │   └── README_Experiment_2_Jena_Baseline_Forecasting.md
+│   └── Tables
+│       ├── baseline_forecasting_metrics.csv
+│       └── chronological_split_summary.csv
+├── Experiment_3_Jena_HCEF_Model
+│   ├── Figures
+│   │   ├── hcef_forecast.png
+│   │   └── training_curve.png
+│   ├── Models
+│   │   └── best_hcef_model.pt
+│   ├── Predictions
+│   │   └── hcef_predictions.csv
+│   ├── Reports
+│   │   └── experiment_3_summary.json
+│   └── Tables
+│       └── hcef_test_metrics.csv
+├── Experiment_3B_Jena_HCEF_LSTM_Model
+│   ├── Figures
+│   │   ├── ensemble_weight_dynamics.png
+│   │   ├── hcef_lstm_observed_vs_predicted.png
+│   │   ├── hcef_lstm_observed_vs_predicted_scatter.png
+│   │   ├── hcef_lstm_residuals.png
+│   │   ├── training_dynamics_mse.png
+│   │   └── validation_error_dynamics.png
+│   ├── Models
+│   │   └── best_hcef_lstm_model.pt
+│   ├── Predictions
+│   │   └── hcef_lstm_test_predictions.csv
+│   ├── Reports
+│   │   ├── experiment_3b_summary.json
+│   │   ├── METHODS_TEXT_Experiment_3B_Jena_HCEF_LSTM_Model.md
+│   │   └── README_Experiment_3B_Jena_HCEF_LSTM_Model.md
+│   └── Tables
+│       ├── chronological_split_summary.csv
+│       ├── hcef_lstm_test_metrics.csv
+│       └── training_history.csv
+├── Experiment_4_Jena_HCEF_Ablation_Study
+│   ├── Figures
+│   │   ├── ablation_test_mae.png
+│   │   ├── ablation_test_r2.png
+│   │   ├── ablation_test_rmse.png
+│   │   ├── ablation_validation_rmse_dynamics.png
+│   │   ├── observed_vs_predicted_Full_Temporal_HCEF_LSTM.png
+│   │   ├── observed_vs_predicted_LSTM_Only.png
+│   │   ├── observed_vs_predicted_No_Contrastive_Loss.png
+│   │   ├── observed_vs_predicted_No_Residual_Gate.png
+│   │   └── observed_vs_predicted_Single_Head_No_Ensemble.png
+│   ├── Models
+│   │   ├── best_Full_Temporal_HCEF_LSTM.pt
+│   │   ├── best_LSTM_Only.pt
+│   │   ├── best_No_Contrastive_Loss.pt
+│   │   ├── best_No_Residual_Gate.pt
+│   │   └── best_Single_Head_No_Ensemble.pt
+│   ├── Predictions
+│   │   ├── predictions_Full_Temporal_HCEF_LSTM.csv
+│   │   ├── predictions_LSTM_Only.csv
+│   │   ├── predictions_No_Contrastive_Loss.csv
+│   │   ├── predictions_No_Residual_Gate.csv
+│   │   └── predictions_Single_Head_No_Ensemble.csv
+│   ├── Reports
+│   │   ├── experiment_4_summary.json
+│   │   ├── METHODS_TEXT_Experiment_4_Jena_HCEF_Ablation_Study.md
+│   │   └── README_Experiment_4_Jena_HCEF_Ablation_Study.md
+│   └── Tables
+│       ├── ablation_test_metrics.csv
+│       ├── chronological_split_summary.csv
+│       ├── component_contribution_analysis.csv
+│       ├── training_history_Full_Temporal_HCEF_LSTM.csv
+│       ├── training_history_LSTM_Only.csv
+│       ├── training_history_No_Contrastive_Loss.csv
+│       ├── training_history_No_Residual_Gate.csv
+│       └── training_history_Single_Head_No_Ensemble.csv
+├── Experiment_5_Jena_Lookback_Window_Sensitivity
+│   ├── Figures
+│   │   ├── lookback_window_mae.png
+│   │   ├── lookback_window_r2.png
+│   │   ├── lookback_window_rmse.png
+│   │   ├── lookback_window_rmse_bar.png
+│   │   ├── lookback_window_validation_rmse_dynamics.png
+│   │   ├── observed_vs_predicted_14d.png
+│   │   ├── observed_vs_predicted_30d.png
+│   │   ├── observed_vs_predicted_3d.png
+│   │   └── observed_vs_predicted_7d.png
+│   ├── Models
+│   │   ├── best_hcef_lstm_14d.pt
+│   │   ├── best_hcef_lstm_30d.pt
+│   │   ├── best_hcef_lstm_3d.pt
+│   │   └── best_hcef_lstm_7d.pt
+│   ├── Predictions
+│   │   ├── predictions_14d.csv
+│   │   ├── predictions_30d.csv
+│   │   ├── predictions_3d.csv
+│   │   └── predictions_7d.csv
+│   ├── Reports
+│   │   ├── experiment_5_summary.json
+│   │   ├── METHODS_TEXT_Experiment_5_Jena_Lookback_Window_Sensitivity.md
+│   │   └── README_Experiment_5_Jena_Lookback_Window_Sensitivity.md
+│   └── Tables
+│       ├── lookback_window_sensitivity_metrics.csv
+│       ├── training_history_14d.csv
+│       ├── training_history_30d.csv
+│       ├── training_history_3d.csv
+│       └── training_history_7d.csv
+├── Experiment_6_Final_Comparative_Summary
+│   ├── Figures
+│   │   ├── final_comparison_mae.png
+│   │   ├── final_comparison_r2.png
+│   │   └── final_comparison_rmse.png
+│   ├── Reports
+│   │   ├── experiment_6_summary.json
+│   │   └── METHODS_TEXT_Experiment_6_Final_Comparative_Summary.md
+│   └── Tables
+│       └── final_model_comparison_summary.csv
+├── Experiment_7_HCEF_External_Validation_Breast_Cancer
+│   ├── Figures
+│   │   ├── hcef_confusion_matrix.png
+│   │   ├── hcef_pr_curve.png
+│   │   ├── hcef_roc_curve.png
+│   │   ├── hcef_training_dynamics.png
+│   │   ├── hcef_validation_dynamics.png
+│   │   ├── model_comparison_f1.png
+│   │   ├── model_comparison_roc_auc.png
+│   │   └── target_distribution.png
+│   ├── Models
+│   │   └── best_hcef_breast_cancer.pt
+│   ├── Predictions
+│   │   ├── predictions_Extra_Trees.csv
+│   │   ├── predictions_Gradient_Boosting.csv
+│   │   ├── predictions_HCE-F_Tabular_Breast_Cancer.csv
+│   │   ├── predictions_Logistic_Regression.csv
+│   │   ├── predictions_MLP.csv
+│   │   ├── predictions_Random_Forest.csv
+│   │   └── predictions_SVM_RBF.csv
+│   ├── Processed_Data
+│   │   └── breast_cancer_processed.csv
+│   ├── Reports
+│   │   ├── dataset_summary.json
+│   │   ├── experiment_7_summary.json
+│   │   ├── METHODS_TEXT_Experiment_7_HCEF_External_Validation_Breast_Cancer.md
+│   │   └── README_Experiment_7_HCEF_External_Validation_Breast_Cancer.md
+│   └── Tables
+│       ├── classical_baseline_metrics.csv
+│       ├── dataset_summary.csv
+│       ├── encoding_report.csv
+│       ├── external_validation_model_comparison.csv
+│       ├── hcef_confusion_matrix.csv
+│       ├── hcef_external_validation_metrics.csv
+│       ├── hcef_pr_curve_coordinates.csv
+│       ├── hcef_roc_curve_coordinates.csv
+│       ├── hcef_training_history.csv
+│       ├── split_summary.csv
+│       └── target_distribution.csv
+└── Experiment_8_HCEF_External_Validation_Heart_Disease
+    ├── Figures
+    │   ├── hcef_confusion_matrix.png
+    │   ├── hcef_pr_curve.png
+    │   ├── hcef_roc_curve.png
+    │   ├── hcef_training_dynamics.png
+    │   ├── hcef_validation_dynamics.png
+    │   ├── model_comparison_f1.png
+    │   ├── model_comparison_roc_auc.png
+    │   └── target_distribution.png
+    ├── Models
+    │   └── best_hcef_heart_disease.pt
+    ├── Predictions
+    │   ├── predictions_Extra_Trees.csv
+    │   ├── predictions_Gradient_Boosting.csv
+    │   ├── predictions_HCE-F_Tabular_Heart_Disease.csv
+    │   ├── predictions_Logistic_Regression.csv
+    │   ├── predictions_MLP.csv
+    │   ├── predictions_Random_Forest.csv
+    │   └── predictions_SVM_RBF.csv
+    ├── Processed_Data
+    │   └── heart_disease_processed.csv
+    ├── Reports
+    │   ├── dataset_summary.json
+    │   ├── experiment_8_summary.json
+    │   ├── METHODS_TEXT_Experiment_8_HCEF_External_Validation_Heart_Disease.md
+    │   └── README_Experiment_8_HCEF_External_Validation_Heart_Disease.md
+    └── Tables
+        ├── classical_baseline_metrics.csv
+        ├── dataset_summary.csv
+        ├── encoding_report.csv
+        ├── external_validation_model_comparison.csv
+        ├── hcef_confusion_matrix.csv
+        ├── hcef_external_validation_metrics.csv
+        ├── hcef_pr_curve_coordinates.csv
+        ├── hcef_roc_curve_coordinates.csv
+        ├── hcef_training_history.csv
+        ├── split_summary.csv
+        └── target_distribution.csv
