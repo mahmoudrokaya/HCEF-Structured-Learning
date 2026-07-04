@@ -1,0 +1,17 @@
+{
+    "experiment": "Experiment_5_Jena_Lookback_Window_Sensitivity",
+    "status": "completed",
+    "input_dataset_folder": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets",
+    "output_folder": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_5_Jena_Lookback_Window_Sensitivity",
+    "device": "cpu",
+    "windows_evaluated": [
+        3,
+        7,
+        14,
+        30
+    ],
+    "best_window_days": 14,
+    "best_test_RMSE": 4.026216425028823,
+    "best_test_MAE": 3.222130060195923,
+    "best_test_R2": 0.7161877155303955
+}
