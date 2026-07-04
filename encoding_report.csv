@@ -1,0 +1,16 @@
+feature,encoding,unique_values
+id,numeric,920
+age,numeric,50
+sex,label_encoded,2
+dataset,label_encoded,4
+cp,label_encoded,4
+trestbps,numeric,61
+chol,numeric,217
+fbs,numeric,2
+restecg,label_encoded,3
+thalch,numeric,119
+exang,numeric,2
+oldpeak,numeric,53
+slope,label_encoded,3
+ca,label_encoded,4
+thal,label_encoded,3

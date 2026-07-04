@@ -1,0 +1,2 @@
+dataset_file,rows,columns_after_cleanup,target_column,target_classes,feature_count,missing_values_after_processing
+D:\47\471\New Papers\Paper 3 IJOCTA\Sub\Data\UCI Heart Disease Data\heart_disease_uci.csv,920,16,num,"['no_disease', 'disease']",15,0
