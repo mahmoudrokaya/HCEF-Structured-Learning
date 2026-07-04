@@ -1,0 +1,22 @@
+{
+    "experiment": "Experiment_3B_Jena_HCEF_LSTM_Model",
+    "status": "completed",
+    "input_dataset": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_7d.csv",
+    "output_folder": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_3B_Jena_HCEF_LSTM_Model",
+    "device": "cpu",
+    "lookback_days": 7,
+    "daily_feature_dim": 56,
+    "best_epoch": 35,
+    "training_time_seconds": 7.526113033294678,
+    "test_metrics": {
+        "MAE": 3.5791831016540527,
+        "RMSE": 4.4797498929508945,
+        "MAPE": 124.4121322631836,
+        "SMAPE": 58.85356521606445,
+        "R2": 0.6469279527664185
+    },
+    "ensemble_weights": {
+        "head_1": 0.4844890832901001,
+        "head_2": 0.5155109167098999
+    }
+}
