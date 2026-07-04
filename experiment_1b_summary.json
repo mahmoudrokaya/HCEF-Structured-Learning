@@ -1,0 +1,38 @@
+{
+    "experiment": "Experiment_1B_Jena_Daily_Window_Generation",
+    "input_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\Data\\Baseline\\jena_climate_2009_2016_Excel.xlsx",
+    "daily_rows": 1153,
+    "target": "target_temperature_today",
+    "lookback_windows": [
+        3,
+        7,
+        14,
+        30
+    ],
+    "generated_datasets": [
+        {
+            "window_days": 3,
+            "samples": 1150,
+            "features": 168,
+            "output_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_3d.csv"
+        },
+        {
+            "window_days": 7,
+            "samples": 1146,
+            "features": 392,
+            "output_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_7d.csv"
+        },
+        {
+            "window_days": 14,
+            "samples": 1139,
+            "features": 784,
+            "output_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_14d.csv"
+        },
+        {
+            "window_days": 30,
+            "samples": 1123,
+            "features": 1680,
+            "output_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\New_3_Experiments\\Experiment_1B_Jena_Daily_Window_Generation\\Generated_Datasets\\jena_daily_window_30d.csv"
+        }
+    ]
+}
