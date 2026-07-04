@@ -1,0 +1,21 @@
+column,missing_count,missing_percent
+Date Time,0,0.0
+p (mbar),0,0.0
+T (degC),0,0.0
+Tpot (K),0,0.0
+Tdew (degC),0,0.0
+rh (%),0,0.0
+VPmax (mbar),0,0.0
+VPact (mbar),0,0.0
+VPdef (mbar),0,0.0
+sh (g/kg),0,0.0
+H2OC (mmol/mol),0,0.0
+rho (g/m**3),0,0.0
+wv (m/s),0,0.0
+max. wv (m/s),0,0.0
+wd (deg),0,0.0
+year,0,0.0
+month,0,0.0
+day,0,0.0
+hour,0,0.0
+dayofyear,0,0.0

@@ -1,0 +1,2 @@
+input_file,rows,columns,datetime_column,invalid_datetime_rows_removed,start_time,end_time,median_sampling_interval_seconds,median_sampling_interval_minutes,duplicate_rows,duplicate_timestamps,total_missing_values,missing_percentage,numeric_columns_detected,target_candidate
+D:\47\471\New Papers\Paper 3 IJOCTA\Sub\Data\Baseline\jena_climate_2009_2016_Excel.xlsx,166018,20,Date Time,254433,2009-01-01 00:10:00,2017-01-01 00:00:00,600.0,10.0,144,144,0,0.0,19,T (degC)
