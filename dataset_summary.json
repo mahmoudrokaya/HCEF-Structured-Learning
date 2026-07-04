@@ -1,0 +1,12 @@
+{
+    "dataset_file": "D:\\47\\471\\New Papers\\Paper 3 IJOCTA\\Sub\\Data\\Breast Cancer Wisconsin Diagnostic Dataset\\data.csv",
+    "rows": 569,
+    "columns_after_cleanup": 31,
+    "target_column": "diagnosis",
+    "target_classes": [
+        "B",
+        "M"
+    ],
+    "feature_count": 30,
+    "missing_values_after_processing": 0
+}
